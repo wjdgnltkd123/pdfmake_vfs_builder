@@ -17,7 +17,7 @@ namespace pdfmake_vfs_builder
 
             StringBuilder vfsFonts = new StringBuilder();
 
-            vfsFonts.Append("this.pdfMake = this.pdfMake || {}; this.pdfMake.vfs = {");
+            vfsFonts.Append("var  = {");
 
             foreach (var fontFile in fontFiles)
             {
