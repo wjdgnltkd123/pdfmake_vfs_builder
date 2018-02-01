@@ -10,7 +10,7 @@ namespace pdfmake_vfs_builder
         static void Main(string[] args)
         {
             var currentPath = AppDomain.CurrentDomain.BaseDirectory;
-            var extensions = new string[] { "*.ttf", "*.ttc" };
+            var extensions = new string[] { "*.ttf", "*.otf", "*.ttc" };
             var fontFiles = new List<string>();
             foreach (var pattern in extensions)
                 fontFiles.AddRange(Directory.GetFiles(currentPath, pattern));
